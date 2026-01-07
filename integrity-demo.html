@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Integrity Demo</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f4f9; padding: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); max-width: 500px; }
+        .issue { color: #d9534f; font-weight: bold; }
+        .valid { color: #5cb85c; }
+        button { background: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h3>Skill: Data Quality & QA</h3>
+    <p>This demo simulates a check for missing fields in a database.</p>
+    <button onclick="runAudit()">Run Data Audit</button>
+    <div id="results" style="margin-top: 20px;"></div>
+</div>
+
+<script>
+    const mockData = [
+        { id: 101, name: "Wendy", status: "Complete" },
+        { id: 102, name: "", status: "Incomplete" },
+        { id: 103, name: "Technical Task", status: "Complete" }
+    ];
+
+    function runAudit() {
+        const display = document.getElementById('results');
+        display.innerHTML = "<strong>Audit Results:</strong><br>";
+        
+        mockData.forEach(item => {
+            if (item.name === "") {
+                display.innerHTML += `<p class="issue">❌ Row ${item.id}: Missing Name (Integrity Error)</p>`;
+            } else {
+                display.innerHTML += `<p class="valid">✅ Row ${item.id}: Passed</p>`;
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
