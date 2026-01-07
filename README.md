@@ -1,36 +1,23 @@
-# data-integrity-checker
-Skill: Software QA & Data Management
 
-The Problem: In high-volume environments—like my experience at the Bank of Uganda and Entebbe Lab—manual data entry often leads to missing or erroneous records that delay delivery times.
-+1
+# **Data Integrity Checker**
 
-The Solution: This tool automates the "integrity audit" process. It scans datasets to identify missing fields and logic errors, ensuring data reliability before it reaches the end-user.
+### **The Skill: Software QA & Data Management**
 
-Key Features:
+**Why I built this:**
+In my work experience, I have seen firsthand how a single manual entry error could snowball into major delays. I wanted to create a tool that catches those mistakes before they cause problems. This project is a direct reflection of data accuracy.
 
+**How it works:**
+I’ve included two parts to show how I handle data at different levels:
 
-Automated Audit: Instantly flags incomplete records to maintain a 100% accuracy standard.
-+1
+**The Backend (Python):** I wrote a script (`data_check.py`) that acts as a "filter" to scan through raw data and log errors instantly.
 
-
-QA Logic: Implements validation rules to catch "bugs" in the data early in the workflow.
-+1
+**The Frontend (HTML):** I built a simple, live interface (`integrity-demo.html`) so non-technical users can run their own audits and see results visually.
 
 
-Efficiency: Reduces the time spent on manual verification, mirroring the 60% improvement in delivery times achieved in previous roles.
+**The Real-World Impact:**
+This isn't just code,it’s about **efficiency**. By automating the "integrity check," I’m replicating the same workflow that helped me cut result delivery times by 60% in a high-pressure lab environment.
 
-How to Use:
+**Try it out:**
 
-Open integrity-demo.html in any browser.
-
-Click "Run Data Audit" to see the logic identify real-time errors.
-
-Why this version works:
-
-It uses your history: It directly references your 70% accuracy and 60% speed improvements from your resume.
-
-
-It’s punchy: It uses the same "Expert" and "Versatile" tone we established for your summary.
-
-
-It bridges the gap: It explains why the code matters to a business, which is exactly what IT recruiters look for.
+1. **For the logic:** Run `python data_check.py` to see the error-flagging in action.
+2. **For the experience:** Open `integrity-demo.html` in your browser to use the interactive audit tool.
